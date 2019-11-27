@@ -1,10 +1,19 @@
-<!DOCTYPE html>
-<meta charset="UTF-8">
-<html>
+<!doctype html>
+
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    -->
+    <script src="https://kit.fontawesome.com/188e0398a1.js" crossorigin="anonymous"></script>
+    <style>
+        i,
+        .faSymbol {
+            font-family: 'FontAwesome';
+            font-style: normal;
+        }
+    </style>
 </head>
 <header>
     <section class="headerContent">
@@ -14,23 +23,145 @@
         <section class="headerRows">
             <section class="upperRow">
                 <select>
-                        <option value="producten">Producten</option>
-                    </select>
-                <form action="">
+                    <option value="producten">
+                        <a href = "#">Producten</a>
+                    </option>
+                </select>
+                <form>
                     <input type="search" placeholder="Zoek product">
-                    <button type="submit"><i class="fa fa-search"></i></button>
+                    <button type="submit"><i class="fas fa-search"></i></button>
                 </form>
                 <label class="switch">
-                        <input type="checkbox">
-                        <span class="switch-label" data-on="Incl. BTW" data-off="Excl. BTW"></span> 
-                        <span class="slider"></span>
+                    <input type="checkbox">
+                    <span class="switch-label" data-on="Incl. BTW" data-off="Excl. BTW"></span> 
+                    <span class="slider"></span>
                 </label>
+                <form>
+                    <button><i class="fa fa-user"></i> Inloggen</button>
+                </form>
+                <select>
+                    <option value="basket" class = "faSymbol">
+                        <div class = "faSymbol">
+                            &#xf07a; dummy text
+                        </div>
+                        <i class="fas fa-shopping-cart"></i>
+                        2
+                        <!-- <i> tag not displayed inside <option> tag, 
+                            nor HEX-coded symbol can be displayed as FontAwesome symbol.
+                            Font of <option> is overwritten as Arial 
+                            need help!!!
+                        -->
+                    </option>
+                </select>
             </section>
             <section class="lowerRow">
-
+                <span>
+                    <span>
+                        <i class="fas fa-thumbs-up"></i> 
+                    </span>
+                <span>
+                        Uitstekende klantenservice
+                    </span>
+                </span>
+                <span>
+                    <span>
+                        <i class="fas fa-truck"></i> 
+                    </span>
+                <span>
+                        Gratis levering of afhalen in onze shops
+                    </span>
+                </span>
+                <span>
+                    <span>                          
+                        <i class="fas fa-phone-alt"></i> 
+                    </span>
+                <span>
+                        Gratis levering of afhalen in onze shops
+                    </span>
+                </span>
             </section>
         </section>
     </section>
 </header>
+<main>
+    <aside>
+        <nav>
+            <a href="#">Behuizingen</a>
+            <a href="#">Bevestigingsmateriaal</a>
+            <a href="#">Draad en kabel</a>
+            <a href="#">Domotica</a>
+            <a href="#">Schakelmateriaal</a>
+            <a href="#">Rook- en hittemelders</a>
+            <a href="#">Verdeelsystemen</a>
+            <a href="#">Lichtbronnen</a>
+            <a href="#">LED-lichtbronnen</a>
+            <a href="#">Installatiemateriaal</a>
+            <a href="#">Kabeldraagsystemen</a>
+            <a href="#">Armaturen</a>
+            <a href="#">Data en multimedia</a>
+            <a href="#">Ruimte-oplossingen</a>
+            <a href="#">Lichtregeling</a>
+        </nav>
+    </aside>
+    <section>
+        <section>
+            <span>Gehoorbescherming 20% korting</span><br>
+            <button type="button">Bestel nu</button>
+            <figure>
+                <img srcset="img\headphones.png,
+                    img\headphones_2x.png 2x,
+                    img\headphones_3x.png 3x" src="img\headphones.png" alt="headphones">
+            </figure>
+        </section>
+        <section>
+            <span>
+                Heb je een vraag? <br> 
+                Wij staan voor je klaar!<br>
+            </span>
+            <span>
+                <i class="far fa-clock"></i>
+                Openingstijden:<br>
+                <span>
+                    Ma-Vr<br>
+                    Za<br> 
+                </span>
+            <span>
+                    08.00 uur - 18.00 uur<br>
+                    08.00 uur - 16.00 uur<br>
+                </span>
+            </span>
+            <span>
+                <i class="fas fa-phone-alt"></i> 
+                Telefonisch bereikbaar:<br>
+                <span>
+                    Ma-Vr<br>
+                    Za<br> 
+                </span>
+            <span>
+                    08.00 uur - 18.00 uur<br>
+                    08.00 uur - 16.00 uur<br>
+                </span>
+            </span>
+        </section>
+        <section>
+            <span>Schuurmachines Vanaf € 150,-</span><br>
+            <button type="button">Bestel nu</button>
+            <figure>
+                <img srcset="img\grinder.png,
+                        img\grinder_2x.png 2x,
+                        img\grinder_3x.png 3x" src="img\grinder.png" alt="grinder">
+            </figure>
+        </section>
+        <section>
+            <span>Rookmelders Vanaf € 50,-</span><br>
+            <button type="button">Bestel nu</button>
+            <figure>
+                <img srcset="img\alarm.png,
+                            img\alarm_2x.png 2x,
+                            img\alarm_3x.png 3x" src="img\alarm.png" alt="alarm">
+            </figure>
+        </section>
+    </section>
+</main>
 
 </html>
