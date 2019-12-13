@@ -1,0 +1,50 @@
+body {
+    margin: 0px;
+    font-family: Avenir;
+}
+
+header {
+    display: flex;
+    background-color: #ffc700;
+}
+
+.headerContent {
+    width: 1110px;
+    margin: auto;
+    display: flex;
+    margin-top: 3px;
+    margin-bottom: 6px;
+    justify-content: space-between;
+}
+
+#logo {
+    height: 100%;
+    width: auto;
+}
+
+.upperRow {
+    display: flex;
+    justify-content: space-between;
+}
+
+.producten,
+input[type=search],
+input[type=email] {
+    font-size: 14px;
+    font-weight: 900;
+    border: none;
+}
+
+.inverted {
+    background-color: black;
+    color: white;
+}
+
+::placeholder {
+    color: #aaaaaa;
+}
+
+input,
+button {
+    border: none;
+}
