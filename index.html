@@ -7,13 +7,7 @@
     <meta charset="UTF-8">
     <script src="https://kit.fontawesome.com/188e0398a1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        i,
-        .faSymbol {
-            font-family: 'FontAwesome';
-            font-style: normal;
-        }
-    </style>
+
 </head>
 
 <body>
@@ -31,16 +25,24 @@
                             <a href="#">Producten</a>
                         </option>
                     </select>
-                    <form>
-                        <input id="searchFeild" type="search" placeholder="Zoek product">
+                    <form class="searchForm">
+                        <input id="searchInput" type="search" placeholder="Zoek product">
                         <button type="submit">
                             <i class="fas fa-search"></i>
                         </button>
                     </form>
-                    <label class="switch">
+                    <!-- <label class="switch">
                         <input type="checkbox">
                         <span class="switch-label" data-on="Incl. BTW" data-off="Excl. BTW"></span>
                         <span class="slider"></span>
+                    </label> -->
+                    <label class='toggle-label'>
+                        <input type='checkbox'/>
+                        <span class='back'>
+                            <span class='toggle'></span>
+                            <span class='label on'>Incl. BTW</span>
+                            <span class='label off'>Excl. BTW</span>  
+                        </span>
                     </label>
                     <form>
                         <button>

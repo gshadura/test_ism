@@ -1,3 +1,17 @@
+@font-face {
+    font-family: 'Avenir';
+    src: url('fonts/Avenir-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('fonts/Lato-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
 body {
     margin: 0px;
     font-family: Avenir;
@@ -24,7 +38,21 @@ header {
 
 .upperRow {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+}
+
+.searchForm {
+    display: flex;
+    flex-grow: 1;
+}
+
+#searchInput {
+    flex-grow: 20;
+}
+
+.lowerRow {
+    font-size: 12px;
+    font-weight: 900;
 }
 
 .producten,
