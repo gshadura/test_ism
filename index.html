@@ -7,6 +7,8 @@
     <meta charset="UTF-8">
     <script src="https://kit.fontawesome.com/188e0398a1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet/less" type="text/css" href="styles.less" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js"></script> -->
 
 </head>
 
@@ -20,39 +22,46 @@
             img\logo_3x.png 3x" src="img\logo.png" alt="logo" , id="logo">
             <section class="headerRows">
                 <section class="upperRow">
-                    <select class="producten inverted">
+                    <!-- <select class="producten inverted">
                         <option value="producten">
                             <a href="#">Producten</a>
                         </option>
-                    </select>
+                    </select> -->
+                    <div class="producten">
+                        <input id="checkbox_toggle" type="checkbox">
+                        <label for="checkbox_toggle" class="inverted">Producten
+                            <i class="fas fa-chevron-down"></i>
+                        </label>
+                        <ul>
+                            <li><a href="#" class="producten inverted">Producten Link One</a> </li>
+                            <li><a href="#" class="producten inverted">Producten Link Two</a></li>
+                            <li><a href="#" class="producten inverted">Producten Link Three</a></li>
+                            <li><a href="#" class="producten inverted">Producten Link Four</a></li>
+                        </ul>
+                    </div>
                     <form class="searchForm">
                         <input id="searchInput" type="search" placeholder="Zoek product">
-                        <button type="submit">
+                        <button type="submit" class="button light">
                             <i class="fas fa-search"></i>
                         </button>
                     </form>
-                    <!-- <label class="switch">
-                        <input type="checkbox">
-                        <span class="switch-label" data-on="Incl. BTW" data-off="Excl. BTW"></span>
-                        <span class="slider"></span>
-                    </label> -->
                     <label class='toggle-label'>
-                        <input type='checkbox'/>
+                        <input type='checkbox' checked/>
                         <span class='back'>
                             <span class='toggle'></span>
                             <span class='label on'>Incl. BTW</span>
                             <span class='label off'>Excl. BTW</span>  
                         </span>
                     </label>
-                    <form>
-                        <button>
+                    <form class="login">
+                        <button class="light">
                             <i class="fa fa-user"> </i>
                             Inloggen
                         </button>
                     </form>
-                    <span>
+                    <span class="basket inverted">
                         <i class="fas fa-shopping-cart"></i>
-                        <select>
+                        <select class="inverted">
                             <option value="basket">
                                 2
                             </option>
@@ -85,6 +94,7 @@
                             Gratis levering of afhalen in onze shops
                         </span>
                     </span>
+
                 </section>
             </section>
         </section>
