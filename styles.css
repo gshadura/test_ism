@@ -36,6 +36,11 @@ header {
     width: auto;
 }
 
+.headerRows {
+    display: flex;
+    flex-direction: column;
+}
+
 .upperRow {
     display: flex;
     justify-content: space-between;
@@ -55,8 +60,8 @@ header {
 }
 
 .producten>label {
-    /* width: 100%;
-    height: 100%; */
+    width: 100%;
+    height: 100%;
     width: 148px;
     padding-left: 9px;
     padding-right: 8px;
@@ -201,4 +206,24 @@ input[type=email] {
 input,
 button {
     border: none;
+}
+
+main {
+    width: 1110;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+#aside_promo {
+    display: flex;
+}
+
+#aside_promo>aside>nav {
+    display: flex;
+    flex-direction: column;
+}
+
+#aside_promo>#promo {
+    display: flex;
 }
