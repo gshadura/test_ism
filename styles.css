@@ -225,6 +225,7 @@ main {
 #aside_promo {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 50px;
 }
 
 #aside_promo>aside>nav {
@@ -239,8 +240,25 @@ main {
 #aside_promo>#promo {
     display: flex;
     flex-wrap: wrap;
+    max-width: 786px;
 }
 
 .promoCard {
     background-color: #f5f5f5;
+    margin-bottom: 7px;
+    margin-right: 7px;
+    /* display: flex;*/
+    padding-left: 33px;
+    padding-top: 65px;
+}
+
+.schedule {
+    /* padding-left: 12px; */
+    padding-top: 20px;
+    min-width: 33%;
+    padding-right: 23px;
+}
+
+.big {
+    padding-top: 30px;
 }
