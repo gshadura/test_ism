@@ -51,6 +51,7 @@ header {
     flex-direction: column;
     flex-grow: 1;
     margin-left: 8px;
+    margin-top: 17px;
     /* width: 72.25; */
 }
 
@@ -68,8 +69,9 @@ header {
 
 .producten {
     height: 41px;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin-top: 17px;
+    border-radius: 3px;
+    /* margin-bottom: auto; */
 }
 
 
@@ -111,21 +113,28 @@ input[type=checkbox]:checked~ul {
 .searchForm {
     display: flex;
     flex-grow: 1;
+    border-radius: 3px;
     /* max-width: 507; */
 }
 
 .searchForm button {
     font-size: 14px;
     padding-right: 9px;
+    border-radius: 0px 3px 3px 0px;
 }
 
 #searchInput {
     flex-grow: 1;
     padding-left: 8px;
+    border-radius: 3px 0px 0px 3px;
 }
 
 .light {
     background-color: white;
+}
+
+.toggle {
+    border-radius: 3px;
 }
 
 .toggle-label {
@@ -170,6 +179,7 @@ input[type=checkbox]:checked~ul {
     text-align: center;
     font-family: Avenir;
     font-size: 12px;
+    margin-top: 4px;
 }
 
 .toggle-label .label.on {
@@ -183,24 +193,30 @@ input[type=checkbox]:checked~ul {
 .login {
     display: inline-flex;
     flex-wrap: nowrap;
+    border-radius: 3px;
 }
 
 .login button {
     font-size: 14px;
     font-family: Avenir;
+    border-radius: 3px;
 }
 
 .basket {
     display: inline-flex;
+    margin-right: 0px;
+    border-radius: 3px;
 }
 
 .lowerRow {
     font-size: 12px;
     font-weight: 900;
-    display: flex;
+    display: inline-flexbox;
+    /* display: flex; */
     /* justify-self: flex-end; */
     /* align-self: flex-end; */
     flex-wrap: wrap;
+    align-self: flex-end;
 }
 
 .producten,
