@@ -287,10 +287,10 @@ main {
 }
 
 #aside_promo>aside {
-    width: 27.75%;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
+    flex-basis: 27.75%;
+    /* display: flex;
+    flex-direction: column; */
+    flex-shrink: 0;
 }
 
 #aside_promo>aside>nav {
@@ -304,11 +304,11 @@ main {
     line-height: 2.21;
 }
 
-#aside_promo>#promo {
+#aside_promo>#promo>div {
     display: flex;
     flex-wrap: wrap;
     /* flex-grow: 1; */
-    max-width: 786px;
+    /* max-width: 786px; */
 }
 
 .promoCard {
@@ -321,6 +321,7 @@ main {
     border-radius: 3px;
     /* flex-basis: 34%; */
     flex-grow: 1;
+    box-sizing: border-box;
 }
 
 
@@ -342,6 +343,11 @@ main {
     flex-direction: column;
 }
 
+
+/* .big {
+    flex-basis: 426px;
+} */
+
 .big .description span {
     font-size: 32px;
 }
@@ -350,7 +356,7 @@ main {
     /* padding-left: 12px; */
     display: flex;
     padding-top: 20px;
-    /* flex-basis: 30%; */
+    flex-basis: 253px;
     padding-right: 23px;
     flex-direction: column;
     padding-bottom: 40px;
