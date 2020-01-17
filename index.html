@@ -351,29 +351,30 @@
             </section>
         </section>
         <section id="photos">
-            <figure>
-                <img srcset="img\man1.png,
-                img\man1_2x.png 2x,
-                img\man1_3x.png 3x" src="img\man1.png" alt="man1">
-                <figcaption>
-                    <h2>Nachtbezorging</h2>
-                    <div>Vandaag besteld vannacht al in huis</div>
-                </figcaption>
-            </figure>
-            <figure>
-                <img srcset="img\man2.png,
-                    img\man2_2x.png 2x,
-                    img\man2_3x.png 3x" src="img\man2.png" alt="man2">
-                <figcaption>
-                    <h2>Nachtbezorging</h2>
-                    <div>Vandaag besteld vannacht al in huis</div>
-                </figcaption>
-            </figure>
+            <div>
+                <figure>
+                    <img srcset="img\man1.png,
+                    img\man1_2x.png 2x,
+                    img\man1_3x.png 3x" src="img\man1.png" alt="man1">
+                    <figcaption>
+                        <h2>Nachtbezorging</h2>
+                        <div>Vandaag besteld vannacht al in huis</div>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img srcset="img\man2.png,
+                        img\man2_2x.png 2x,
+                        img\man2_3x.png 3x" src="img\man2.png" alt="man2">
+                    <figcaption>
+                        <h2>Nachtbezorging</h2>
+                        <div>Vandaag besteld vannacht al in huis</div>
+                    </figcaption>
+                </figure>
+            </div>
         </section>
-
     </main>
     <footer>
-        <div id="footer_cards">
+        <div id="footer_cards" class="content">
             <div>
                 <h2>
                     Over bedrijf
@@ -398,18 +399,20 @@
                     <a href="#">Nieuwsbrief</a>
                 </nav>
             </div>
-            <div>
+            <div class = "subscribe">
                 <h2>
                     Nieuwsbrief
                 </h2>
-                <form>
-                    <input id="mailFeild" type="email" placeholder="E-mailadres">
-                    <button type="submit">
-                        Aanmelden
-                    </button>
-                </form>
+                
+                    <form>
+                        <input id="mailFeild" type="email" placeholder="E-mailadres">
+                        <button type="submit" class="inverted">
+                            Aanmelden
+                        </button>
+                    </form>
+                
             </div>
-            <div>
+            <div class = "paySend">
                 <img srcset="img\iban.png,
                 img\iban_2x.png 2x,
                 img\iban_3x.png 3x" src="img\iban.png" alt="iban">
@@ -423,23 +426,25 @@
                 </div>
             </div>
         </div>
-        <div id="footer_row">
-            <nav>
-                <a href="#">Algemene voorwarden</a> |
-                <a href="#">Privacy</a> |
-                <a href="#">Cookies</a> |
-                <a href="#">Disclaimer</a>
-            </nav>
-            <div id="reviews">
-                <div id="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <div>
-                    1.011 beoordelingen
+        <div id="underfooter">
+            <div class="content">
+                <nav>
+                    <a href="#">Algemene voorwarden</a> |
+                    <a href="#">Privacy</a> |
+                    <a href="#">Cookies</a> |
+                    <a href="#">Disclaimer</a>
+                </nav>
+                <div id="reviews">
+                    <div id="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div>
+                        1.011 beoordelingen
+                    </div>
                 </div>
             </div>
         </div>
