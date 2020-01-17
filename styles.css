@@ -414,8 +414,9 @@ dd {
 }
 
 #myCarousel {
-    display: inline-flex;
+    /* display: inline-flex; */
     width: 100%;
+    position: relative;
 }
 
 #myCarousel>button {
@@ -424,26 +425,33 @@ dd {
     background-color: rgba(255, 255, 255, 0);
     padding: 0px;
     display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .carouselCard {
-    padding-left: 42px;
-    padding-right: 42px;
-    /* flex-grow: 1; */
+    padding: 21px 42px;
+    box-sizing: border-box;
+    flex: 0 0 20%;
+    border-top: 1px solid lightgrey;
+    border-right: 1px solid lightgrey;
 }
 
 .carouselCard figure figcaption div {
     flex-wrap: nowrap;
-    font-size: 11px;
+    font-size: 14px;
 }
 
 .carouselCard figure>div {
     width: 120px;
+    height: 120px;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0 auto 10px auto;
 }
 
 .left {
-    margin-left: -23px;
+    left: -23px;
 }
