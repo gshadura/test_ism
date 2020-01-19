@@ -46,6 +46,7 @@ header {
     margin: auto;
     display: flex;
     margin-top: 3px;
+    padding-left: 10px;
     /* margin-bottom: 6px; */
     /* justify-content: space-between; */
 }
@@ -53,7 +54,7 @@ header {
 .headerContent aside {
     display: flex;
     justify-content: space-between;
-    width: 27.75%;
+    width: 27.3%;
 }
 
 #logo {
@@ -74,6 +75,7 @@ header {
 .upperRow {
     display: flex;
     height: 40px;
+    flex-wrap: wrap;
 }
 
 .upperRow>* {
@@ -88,6 +90,7 @@ header {
     padding-left: 7px;
     padding-right: 6px;
     /* margin-bottom: auto;*/
+    margin-right: 7px;
 }
 
 a {
@@ -103,7 +106,8 @@ input[type=checkbox]:checked~ul {
     display: flex;
     flex-grow: 1;
     border-radius: 3px;
-    /* max-width: 507; */
+    max-width: 507px;
+    margin-bottom: 6px;
 }
 
 .searchForm button {
@@ -116,6 +120,19 @@ input[type=checkbox]:checked~ul {
     flex-grow: 1;
     padding-left: 8px;
     border-radius: 3px 0px 0px 3px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.controls {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    margin-bottom: 6px;
+}
+
+.controls>* {
+    margin-right: 8px;
+    border-radius: 3px;
 }
 
 .light {
@@ -217,15 +234,18 @@ input[type=checkbox]:checked~ul {
     font-size: 12px;
     font-weight: 900;
     display: inline-flexbox;
-    /* display: flex; */
+    display: flex;
     /* justify-self: flex-end; */
     /* align-self: flex-end; */
     flex-wrap: wrap;
-    line-height: 2.58;
+    /* line-height: 2.58; */
+    padding-top: 9px;
+    padding-bottom: 8px;
 }
 
 .lowerRow>span {
     margin-right: 25px;
+    display: inline-flex;
 }
 
 .lowerRow .icon {
@@ -313,6 +333,7 @@ main {
 
 .promoCard>div {
     display: flex;
+    justify-content: space-between;
 }
 
 .promoCard button {
@@ -382,6 +403,7 @@ dd {
 
 .big {
     padding-top: 30px;
+    padding-bottom: 38px;
 }
 
 .regular {
@@ -478,13 +500,16 @@ dd {
     color: white;
 }
 
-#photos>div {
+#photos div {
     display: flex;
-    margin-right: -7px;
+    flex-wrap: wrap;
+}
+
+#photos div figure:first-child {
+    margin-right: 6px;
 }
 
 #photos>div>figure {
-    margin-right: 7px;
     position: relative;
 }
 
@@ -506,6 +531,7 @@ dd {
     margin-right: auto;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 footer {
@@ -513,19 +539,20 @@ footer {
 }
 
 #footer_cards {
-    padding-top: 47px;
-    padding-bottom: 48px;
+    padding-top: 37px;
+    padding-bottom: 38px;
+    /* margin-left: -30px;
+    margin-right: -30px; */
 }
 
-#underfooter {
-    background-color: white;
-    padding-top: 12px;
-    padding-bottom: 12px;
-}
 
-#stars {
-    color: #ffc700;
-    margin-right: 11px;
+/* #footer_cards>div {
+    padding: 10px;
+} */
+
+#footer_cards .side {
+    min-width: 24%;
+    margin-right: 0px;
 }
 
 #footer_cards nav {
@@ -562,4 +589,15 @@ footer {
 .paySend img {
     margin-bottom: 20px;
     margin-right: 28px;
+}
+
+#underfooter {
+    background-color: white;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+#stars {
+    color: #ffc700;
+    margin-right: 11px;
 }

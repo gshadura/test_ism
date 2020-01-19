@@ -33,48 +33,39 @@
             </aside>
             <section class="headerRows">
                 <section class="upperRow">
-                    <!-- <div class="producten">
-                        <input id="checkbox_toggle" type="checkbox">
-                        <label for="checkbox_toggle" class="inverted">Producten
-                            <i class="fas fa-chevron-down"></i>
-                        </label>
-                        <ul>
-                            <li><a href="#" class="producten inverted">Producten Link One</a> </li>
-                            <li><a href="#" class="producten inverted">Producten Link Two</a></li>
-                            <li><a href="#" class="producten inverted">Producten Link Three</a></li>
-                            <li><a href="#" class="producten inverted">Producten Link Four</a></li>
-                        </ul>
-                    </div> -->
                     <form class="searchForm">
                         <input id="searchInput" type="search" placeholder="Zoek product">
                         <button type="submit" class="button light">
                             <i class="fas fa-search"></i>
                         </button>
                     </form>
-                    <label class='toggle-label'>
-                        <input type='checkbox' checked />
-                        <span class='back'>
-                            <span class='toggle'></span>
-                            <span class='label on'>Incl. BTW</span>
-                            <span class='label off'>Excl. BTW</span>
+                    <div class="controls">
+
+                        <label class='toggle-label'>
+                            <input type='checkbox' checked />
+                            <span class='back'>
+                                <span class='toggle'></span>
+                                <span class='label on'>Incl. BTW</span>
+                                <span class='label off'>Excl. BTW</span>
+                            </span>
+                        </label>
+                        <form class="login">
+                            <button class="light">
+                                <i class="fa fa-user"> </i>
+                                Inloggen
+                            </button>
+                        </form>
+                        <span class="basket inverted">
+                            <div>
+                                <i class="fas fa-shopping-cart"></i>
+                                <select class="inverted">
+                                    <option value="basket">
+                                        2
+                                    </option>
+                                </select>
+                            </div>
                         </span>
-                    </label>
-                    <form class="login">
-                        <button class="light">
-                            <i class="fa fa-user"> </i>
-                            Inloggen
-                        </button>
-                    </form>
-                    <span class="basket inverted">
-                        <div>
-                            <i class="fas fa-shopping-cart"></i>
-                            <select class="inverted">
-                                <option value="basket">
-                                    2
-                                </option>
-                            </select>
-                        </div>
-                    </span>
+                    </div>
 
                 </section>
                 <section class="lowerRow">
@@ -82,25 +73,26 @@
                         <span class="icon">
                             <i class="fas fa-thumbs-up"></i>
                         </span>
-                    <span>
-                            Uitstekende klantenservice
-                        </span>
+                    <div>
+                        Uitstekende klantenservice
+                    </div>
                     </span>
                     <span>
                         <span class="icon">
                             <i class="fas fa-truck"></i>
                         </span>
-                    <span>
-                            Gratis levering of afhalen in onze shops
-                        </span>
+                    <div>
+                        Gratis levering of afhalen in onze shops
+                    </div>
                     </span>
                     <span>
                         <span class="icon">
                             <i class="fas fa-phone-alt"></i>
                         </span>
-                    <span>
-                            Gratis levering of afhalen in onze shops
-                        </span>
+                    <div>
+                        Gratis levering of afhalen in onze shops
+                    </div>
+
                     </span>
 
                 </section>
@@ -375,7 +367,7 @@
     </main>
     <footer>
         <div id="footer_cards" class="content">
-            <div>
+            <div class = "side">
                 <h2>
                     Over bedrijf
                 </h2>
