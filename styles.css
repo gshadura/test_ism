@@ -465,6 +465,11 @@ dd {
     transform: translateY(-50%);
 }
 
+#carouselItems {
+    display: flex;
+    flex-direction: row;
+}
+
 .carouselCard {
     padding: 21px 42px;
     box-sizing: border-box;
